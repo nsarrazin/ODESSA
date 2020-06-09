@@ -1,0 +1,59 @@
+{
+    "phases": [
+      {
+        "modules": {
+          "6dof.mass.ConstantMassInertia": {
+            "mass": 150,
+            "inertia" : [[1,0,0],[0,1,0], [0,0,1]]
+          },
+          "6dof.atmos.AtmosISA": {},
+          "6dof.gravity.GravityJ26DoF": {},
+          "6dof.thrust.ConstantThrust": {
+            "thrust" : 7000
+          },
+          "6dof.tower.TowerSpherical" : {
+            "heading" : 110,
+            "elevation" : 45,
+            "tower_length" : 10,
+            "roll" : 0
+          },
+          "6dof.dynamics.DynamicsSpherical": {}
+        },
+        "events" : { "ground.groundLLA" : {"terminal" : true},
+                     "time.fixedTime" : {"t_event" : 5, 
+                                         "terminal" : true}}
+      },
+      {
+        "modules": {
+          "6dof.mass.ConstantMassInertia": {
+            "mass": 150,
+            "inertia" : [[1,0,0],[0,1,0], [0,0,1]]
+          },
+          "6dof.atmos.AtmosISA": {},
+          "6dof.gravity.GravityJ26DoF": {},
+          "6dof.dynamics.DynamicsSpherical": {}
+        },
+        "events" : { "ground.groundLLA" : {"terminal" : true}}
+      }
+      ],
+    "Core": {
+      "id": "6dof.core.Core6DoF",
+      "vel": [
+        0,
+        0,
+        0
+      ],
+      "lla": [
+        0.9145525,
+        0.102974,
+        0
+      ],
+      "omega" : [0,0,0],
+      "quats" : [1,0,0,0]
+    },
+    "Simulation": {
+      "dt": 0.1,
+      "tf": 3600,
+      "method": "LSODA"
+    }
+  }

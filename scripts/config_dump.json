@@ -1,0 +1,110 @@
+{
+    "phases": [
+      {
+        "modules": {
+          "3dof.mass.ConstantMass": {
+            "mass": 150
+          },
+          "3dof.atmos.AtmosSTD76": {},
+          "3dof.aero.Aero3dof": {
+            "drags": [
+              1,
+              1,
+              1
+            ],
+            "machs": [
+              0,
+              1,
+              999
+            ],
+            "wind_alts": [
+              0,
+              100000
+            ],
+            "wind_headings": [
+              0,
+              0
+            ],
+            "wind_speeds": [
+              0,
+              0
+            ]
+          },
+          "3dof.gravity.GravityJ2": {
+            "J2": 0.00108262982,
+            "mu": 398600480106885.44,
+            "re": 6378137.20410648
+          },
+          "3dof.dynamics.Dynamics3dof": {}
+        },
+        "events": {
+          "ground.groundLLA": {
+            "terminal": true
+          },
+          "time.fixedTime": {
+            "t_event": 10,
+            "terminal": true
+          }
+        }
+      },
+      {
+        "modules": {
+          "3dof.mass.ConstantMass": {
+            "mass": 150
+          },
+          "3dof.atmos.AtmosSTD76": {},
+          "3dof.aero.Aero3dof": {
+            "drags": [
+              0,
+              0,
+              0
+            ],
+            "machs": [
+              0,
+              1,
+              999
+            ],
+            "wind_alts": [
+              0,
+              100000
+            ],
+            "wind_headings": [
+              0,
+              0
+            ],
+            "wind_speeds": [
+              0,
+              0
+            ]
+          },
+          "3dof.gravity.GravityJ2": {
+            "J2": 0.00108262982,
+            "mu": 398600480106885.44,
+            "re": 6378137.20410648
+          },
+          "3dof.dynamics.Dynamics3dof": {}
+        },
+        "events": {
+          "ground.groundLLA": {
+            "terminal": true
+          }
+        }
+      }
+    ],
+    "Core": {
+      "id": "3dof.core.Core3DoF",
+      "y": [
+        5612184.077626925,
+        0,
+        3045464.0133150755,
+        -50,
+        -50,
+        100
+      ]
+    },
+    "Simulation": {
+      "dt": "inf",
+      "tf": 18000,
+      "method": "LSODA"
+    }
+  }

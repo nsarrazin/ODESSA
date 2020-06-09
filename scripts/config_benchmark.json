@@ -1,0 +1,32 @@
+{
+  "phases": [
+    {
+      "modules": {
+        "3dof.mass.ConstantMass": {
+          "mass": 15
+        },
+        "3dof.atmos.AtmosISA": {},
+        "3dof.aero.Aero3dof": {
+          "drags": [1,1,1],
+          "machs": [0,1,999],
+          "wind_alts": [0,100000],
+          "wind_speeds": [0,0],
+          "wind_headings": [0,0]
+        },
+        "3dof.gravity.Gravity3dof": {},
+        "3dof.dynamics.Dynamics3dof": {}
+     },
+     "events" : { "ground.groundLLA" : {"terminal" : true}}
+    }
+  ],
+  "Core": {
+    "id": "3dof.core.Core3DoF",
+    "vel": [75,25,25],
+    "lla": [0,0,800]
+  },
+  "Simulation": {
+    "dt": "0.1",
+    "tf": 18000,
+    "method": "LSODA"
+  }
+}

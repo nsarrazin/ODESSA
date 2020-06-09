@@ -1,0 +1,244 @@
+{
+  "phases": [
+    {
+      "modules": {
+        "6dof.mass.ConstantMassInertia": {
+          "mass": 332,
+          "inertia": [
+            [
+              4.1,
+              0,
+              0
+            ],
+            [
+              0,
+              1400,
+              0
+            ],
+            [
+              0,
+              0,
+              1400
+            ]
+          ]
+        },
+        "6dof.atmos.AtmosISA": {},
+        "6dof.aero.AeroLinear": {
+          "machs": "file('data/aero_on_fake.csv')[0]",
+          "c_x_0": "file('data/aero_on_fake.csv')[1]",
+          "c_x_a2": "file('data/aero_on_fake.csv')[2]",
+          "c_x_p": "file('data/aero_on_fake.csv')[3]",
+          "c_x_q": "file('data/aero_on_fake.csv')[4]",
+          "c_x_r": "file('data/aero_on_fake.csv')[5]",
+          "c_y_b": "file('data/aero_on_fake.csv')[6]",
+          "c_y_p": "file('data/aero_on_fake.csv')[7]",
+          "c_y_q": "file('data/aero_on_fake.csv')[8]",
+          "c_y_r": "file('data/aero_on_fake.csv')[9]",
+          "c_z_a": "file('data/aero_on_fake.csv')[10]",
+          "c_z_p": "file('data/aero_on_fake.csv')[11]",
+          "c_z_q": "file('data/aero_on_fake.csv')[12]",
+          "c_z_r": "file('data/aero_on_fake.csv')[13]",
+          "c_ll_0": "file('data/aero_on_fake.csv')[14]",
+          "c_ll_p": "file('data/aero_on_fake.csv')[15]",
+          "c_m_a": "file('data/aero_on_fake.csv')[16]",
+          "c_m_p": "file('data/aero_on_fake.csv')[17]",
+          "c_m_q": "file('data/aero_on_fake.csv')[18]",
+          "c_m_r": "file('data/aero_on_fake.csv')[19]",
+          "c_ln_b": "file('data/aero_on_fake.csv')[20]",
+          "c_ln_p": "file('data/aero_on_fake.csv')[21]",
+          "c_ln_q": "file('data/aero_on_fake.csv')[22]",
+          "c_ln_r": "file('data/aero_on_fake.csv')[23]",
+          "x_cp": "file('data/aero_on_fake.csv')[24]",
+          "lref": 0.2782,
+          "sref": 0.06078607935170473
+        },
+        "6dof.gravity.GravityJ26DoF": {},
+        "6dof.thrust.ConstantThrust": {
+          "thrust": 13672
+        },
+        "6dof.tower.TowerSpherical": {
+          "heading": 110,
+          "elevation": 85,
+          "tower_length": 5,
+          "roll": 0
+        },
+        "6dof.dynamics.DynamicsSpherical": {}
+      },
+      "events": {
+        "distance.distancePointLLA": {
+          "distance": 5,
+          "lla_0": [
+            0.9145525,
+            0.102974,
+            0.0
+          ],
+          "direction": 1,
+          "terminal": true
+        }
+      }
+    },
+    {
+      "modules": {
+        "6dof.mass.ConstantMassInertia": {
+          "mass": 332,
+          "inertia": [
+            [
+              4.1,
+              0,
+              0
+            ],
+            [
+              0,
+              1400,
+              0
+            ],
+            [
+              0,
+              0,
+              1400
+            ]
+          ]
+        },
+        "6dof.atmos.AtmosISA": {},
+        "6dof.aero.AeroLinear": {
+          "machs": "file('data/aero_on_fake.csv')[0]",
+          "c_x_0": "file('data/aero_on_fake.csv')[1]",
+          "c_x_a2": "file('data/aero_on_fake.csv')[2]",
+          "c_x_p": "file('data/aero_on_fake.csv')[3]",
+          "c_x_q": "file('data/aero_on_fake.csv')[4]",
+          "c_x_r": "file('data/aero_on_fake.csv')[5]",
+          "c_y_b": "file('data/aero_on_fake.csv')[6]",
+          "c_y_p": "file('data/aero_on_fake.csv')[7]",
+          "c_y_q": "file('data/aero_on_fake.csv')[8]",
+          "c_y_r": "file('data/aero_on_fake.csv')[9]",
+          "c_z_a": "file('data/aero_on_fake.csv')[10]",
+          "c_z_p": "file('data/aero_on_fake.csv')[11]",
+          "c_z_q": "file('data/aero_on_fake.csv')[12]",
+          "c_z_r": "file('data/aero_on_fake.csv')[13]",
+          "c_ll_0": "file('data/aero_on_fake.csv')[14]",
+          "c_ll_p": "file('data/aero_on_fake.csv')[15]",
+          "c_m_a": "file('data/aero_on_fake.csv')[16]",
+          "c_m_p": "file('data/aero_on_fake.csv')[17]",
+          "c_m_q": "file('data/aero_on_fake.csv')[18]",
+          "c_m_r": "file('data/aero_on_fake.csv')[19]",
+          "c_ln_b": "file('data/aero_on_fake.csv')[20]",
+          "c_ln_p": "file('data/aero_on_fake.csv')[21]",
+          "c_ln_q": "file('data/aero_on_fake.csv')[22]",
+          "c_ln_r": "file('data/aero_on_fake.csv')[23]",
+          "x_cp": "file('data/aero_on_fake.csv')[24]",
+          "lref": 0.2782,
+          "sref": 0.06078607935170473
+        },
+        "6dof.gravity.GravityJ26DoF": {},
+        "6dof.thrust.ConstantThrust": {
+          "thrust": 13672
+        },
+        "6dof.dynamics.DynamicsSpherical": {}
+      },
+      "events": {
+        "ground.groundLLA": {
+          "terminal": true
+        },
+        "time.fixedTime": {
+          "t_event": 3,
+          "terminal": true
+        }
+      }
+    },
+    {
+      "modules": {
+        "6dof.mass.ConstantMassInertia": {
+          "mass": 332,
+          "inertia": [
+            [
+              4.1,
+              0,
+              0
+            ],
+            [
+              0,
+              1400,
+              0
+            ],
+            [
+              0,
+              0,
+              1400
+            ]
+          ]
+        },
+        "6dof.atmos.AtmosISA": {},
+        "6dof.aero.AeroLinear": {
+          "machs": "file('data/aero_off_fake.csv')[0]",
+          "c_x_0": "file('data/aero_off_fake.csv')[1]",
+          "c_x_a2": "file('data/aero_off_fake.csv')[2]",
+          "c_x_p": "file('data/aero_off_fake.csv')[3]",
+          "c_x_q": "file('data/aero_off_fake.csv')[4]",
+          "c_x_r": "file('data/aero_off_fake.csv')[5]",
+          "c_y_b": "file('data/aero_off_fake.csv')[6]",
+          "c_y_p": "file('data/aero_off_fake.csv')[7]",
+          "c_y_q": "file('data/aero_off_fake.csv')[8]",
+          "c_y_r": "file('data/aero_off_fake.csv')[9]",
+          "c_z_a": "file('data/aero_off_fake.csv')[10]",
+          "c_z_p": "file('data/aero_off_fake.csv')[11]",
+          "c_z_q": "file('data/aero_off_fake.csv')[12]",
+          "c_z_r": "file('data/aero_off_fake.csv')[13]",
+          "c_ll_0": "file('data/aero_off_fake.csv')[14]",
+          "c_ll_p": "file('data/aero_off_fake.csv')[15]",
+          "c_m_a": "file('data/aero_off_fake.csv')[16]",
+          "c_m_p": "file('data/aero_off_fake.csv')[17]",
+          "c_m_q": "file('data/aero_off_fake.csv')[18]",
+          "c_m_r": "file('data/aero_off_fake.csv')[19]",
+          "c_ln_b": "file('data/aero_off_fake.csv')[20]",
+          "c_ln_p": "file('data/aero_off_fake.csv')[21]",
+          "c_ln_q": "file('data/aero_off_fake.csv')[22]",
+          "c_ln_r": "file('data/aero_off_fake.csv')[23]",
+          "x_cp": "file('data/aero_on_fake.csv')[24]",
+          "lref": 0.2782,
+          "sref": 0.06078607935170473
+        },
+        "6dof.gravity.GravityJ26DoF": {},
+        "6dof.dynamics.DynamicsSpherical": {}
+      },
+      "events": {
+        "ground.groundLLA": {
+          "terminal": true
+        }
+      }
+    }
+  ],
+  "Core": {
+    "id": "6dof.core.Core6DoF",
+    "vel": [
+      0,
+      0,
+      0
+    ],
+    "lla": [
+      0.9145525,
+      0.102974,
+      0
+    ],
+    "cg": [
+      -4.963910396289760385e+0,
+      -1.670999999999999959e-03,
+      6.019999999999999961e-04
+    ],
+    "omega": [
+      0,
+      0,
+      0
+    ],
+    "quats": [
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "Simulation": {
+    "dt": "inf",
+    "tf": 3600,
+    "method": "LSODA"
+  }
+}

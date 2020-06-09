@@ -1,0 +1,65 @@
+{
+    "phases": [
+      {
+        "modules": {
+          "6dof.mass.ConstantMassInertia": {
+            "mass": 150,
+            "inertia" : [[1,0,0],[0,1,0], [0,0,1]]
+          },
+          "6dof.atmos.AtmosSTD76": {},
+          "6dof.aero.AeroConstant": {
+          "machs": 0.0,
+          "c_x_0": 0.0,
+          "c_x_a2": 0.0,
+          "c_x_p": 0.0,
+          "c_x_q": 0.0,
+          "c_x_r": 0.0,
+          "c_y_b": 0.0,
+          "c_y_p": 0.0,
+          "c_y_q": 0.0,
+          "c_y_r": 0.0,
+          "c_z_a": 0.0,
+          "c_z_p": 0.0,
+          "c_z_q": 0.0,
+          "c_z_r": 0.0,
+          "c_ll_0": 0.0,
+          "c_ll_p": 0.0,
+          "c_m_a": 0.0,
+          "c_m_p": 0.0,
+          "c_m_q": 0.0,
+          "c_m_r": 0.0,
+          "c_ln_b": 0.0,
+          "c_ln_p": 0.0,
+          "c_ln_q": 0.0,
+          "c_ln_r": 0.0,
+          "bref": 0.2782,
+          "cref": 0.1,
+          "sref": 0.06078607935170473
+          },
+          "6dof.gravity.GravityJ26DoF": {},
+          "6dof.dynamics.DynamicsSpherical": {}
+        },
+        "events" : {}
+      }
+      ],
+    "Core": {
+      "id": "6dof.core.Core6DoF",
+      "vel": [
+        0,
+        0,
+        0
+      ],
+      "lla": [
+        0.9145525,
+        0.102974,
+        0
+      ],
+      "omega" : [0,0,0],
+      "quats" : [1,0,0,0]
+    },
+    "Simulation": {
+      "dt": 0.1,
+      "tf": 3600,
+      "method": "LSODA"
+    }
+  }
