@@ -3,35 +3,35 @@
 ODESSA (ODE System Solving Accelerator) is a Python package that leverages Numba and SciPy solvers to accelerate the solving of ODE systems in a modular fashion.
 
 - [ODESSA](#odessa)
-	- [Installation](#installation)
-	- [Basic principles](#basic-principles)
-	- [Modules](#modules)
-		- [Necessary components](#necessary-components)
-		- [Example](#example)
-			- [Spec lists](#spec-lists)
-			- [Jitclass](#jitclass)
-		- [Special modules](#special-modules)
-			- [Core](#core)
-			- [Empty](#empty)
-	- [Configuration](#configuration)
-		- [Phases](#phases)
-			- [Modules](#modules-1)
-			- [Events](#events)
-			- [Using multiple phases](#using-multiple-phases)
-		- [Core](#core-1)
-		- [Simulation](#simulation)
-	- [Demo](#demo)
-	- [Contribution](#contribution)
-		- [Issues](#issues)
-		- [Testing](#testing)
-		- [Branches](#branches)
+  - [Installation](#installation)
+  - [Basic principles](#basic-principles)
+  - [Modules](#modules)
+    - [Necessary components](#necessary-components)
+    - [Example](#example)
+      - [Spec lists](#spec-lists)
+      - [Jitclass](#jitclass)
+    - [Special modules](#special-modules)
+      - [Core](#core)
+      - [Empty](#empty)
+  - [Configuration](#configuration)
+    - [Phases](#phases)
+      - [Modules](#modules-1)
+      - [Events](#events)
+      - [Using multiple phases](#using-multiple-phases)
+    - [Core](#core-1)
+    - [Simulation](#simulation)
+  - [Demo](#demo)
+  - [Contribution](#contribution)
+    - [Issues](#issues)
+    - [Testing](#testing)
+    - [Branches](#branches)
 
 ---
 ## Installation
 
 Installation is straightforward. Clone the project, go to the root folder '`ODESSA`' and install using pip.
 ```bash
-$ git clone ssh://git@git.projectstratos.nl:666/simulations/ODESSA.git
+$ git clone git@github.com:nsarrazin/ODESSA.git
 $ cd ODESSA
 $ pip install -e .
 ```
