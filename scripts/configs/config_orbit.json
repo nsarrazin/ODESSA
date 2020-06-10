@@ -6,7 +6,7 @@
             "mass": 150
           },
           "3dof.atmos.AtmosISA": {},
-          "3dof.aero.Aero3dof": {
+          "3dof.aero.AeroRTS": {
             "drags": [
               0,
               0,
@@ -18,8 +18,8 @@
               999
             ]
           },
-          "3dof.gravity.Gravity3dof": {},
-          "3dof.dynamics.Dynamics3dof": {}
+          "3dof.gravity.GravityRTS": {},
+          "3dof.dynamics.DynamicsRTS": {}
         },
         "events" : { "ground.groundLLA" : {"terminal" : true}}
       }

@@ -6,7 +6,7 @@
             "mass": 150
           },
           "3dof.atmos.AtmosSTD76": {},
-          "3dof.aero.Aero3dof": {
+          "3dof.aero.AeroRTS": {
             "drags": [
               1,
               1,
@@ -32,7 +32,7 @@
   
           },
           "3dof.gravity.GravityJ2": {},
-          "3dof.dynamics.Dynamics3dof": {}
+          "3dof.dynamics.DynamicsRTS": {}
         },
         "events" : { "ground.groundLLA" : {"terminal" : true},
                      "time.fixedTime" : {"t_event" : 10, 
@@ -44,7 +44,7 @@
             "mass": 150
           },
           "3dof.atmos.AtmosSTD76": {},
-          "3dof.aero.Aero3dof": {
+          "3dof.aero.AeroRTS": {
             "drags": [
               0,
               0,
@@ -70,7 +70,7 @@
   
           },
           "3dof.gravity.GravityJ2": {},
-          "3dof.dynamics.Dynamics3dof": {}
+          "3dof.dynamics.DynamicsRTS": {}
         },
         "events" : { "ground.groundLLA" : {"terminal" : true}}
       }

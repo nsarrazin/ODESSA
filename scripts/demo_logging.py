@@ -8,7 +8,10 @@ import os
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-filename = "data_s4/stratos4.json"
+# not very impressive, showcase the history feature
+# to get auxiliary variables (here angle of attack & sideslip)
+
+filename = "configs/config_6dof_aero.json"
 
 dirname = os.path.dirname(__file__)
 

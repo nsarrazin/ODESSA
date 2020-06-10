@@ -9,6 +9,8 @@ import os
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
+# this lil script runs a bunch of simulations to showcase different things
+# like multiple flight phases or an orbital trajectory
 
 def demo(filename, plot='lla'):
     # loading the json
@@ -47,6 +49,6 @@ def demo(filename, plot='lla'):
 
 if __name__ == "__main__":
     print("Orbit")
-    print(demo('config_orbit.json', plot="eci"))
+    print(demo('configs/config_orbit.json', plot="eci"))
     print("Multi-phase")
-    print(demo('config_phases.json', plot="lla"))
+    print(demo('configs/config_phases.json', plot="lla"))

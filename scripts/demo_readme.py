@@ -8,12 +8,14 @@ from pathlib import Path
 
 import os
 
+# just the script from the readme
+
 plt.style.use('ggplot')
 
 fig = plt.figure()
 
 # read the JSON
-filepath = 'config_demo.json'
+filepath = 'configs/config_demo.json'
 
 dirname = os.path.dirname(__file__)
 filename = os.path.join(dirname, filepath)

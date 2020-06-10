@@ -6,15 +6,15 @@
             "mass": 15
           },
           "3dof.atmos.AtmosISA": {},
-          "3dof.aero.Aero3dof": {
+          "3dof.aero.AeroRTS": {
             "drags": [1,1,1],
             "machs": [0,1,999],
             "wind_alts": [0,100000],
             "wind_speeds": [0,0],
             "wind_headings": [0,0]
           },
-          "3dof.gravity.Gravity3dof": {},
-          "3dof.dynamics.Dynamics3dof": {}
+          "3dof.gravity.GravityRTS": {},
+          "3dof.dynamics.DynamicsRTS": {}
        },
        "events" : { "ground.groundLLA" : {"terminal" : true}}
       }

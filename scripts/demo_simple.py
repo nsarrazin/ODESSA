@@ -8,7 +8,8 @@ import os
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-filename = "config_6dof.json"
+# the most basic config possible
+filename = "configs/config_6dof.json"
 
 dirname = os.path.dirname(__file__)
 
@@ -23,7 +24,7 @@ sols = sim.run()
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 for sol in sols:
-    lla = np.array([ecef_to_wgs84([sol.y[0][i], sol.y[1][i], sol.y[2][i]])
+    lla = np.array([ecef_to_wgs84([sol.y[0][i], sol.y[1][i], sol.y[2][i]]) # get the LLA from ECEF coordinates and plot it
                     for i in range(sol.y[0].shape[0])])
     ax.plot(lla[:, 0], lla[:, 1], lla[:, 2])
 
