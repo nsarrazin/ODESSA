@@ -11,6 +11,8 @@ AtmosISA_spec = empty_spec + []
 
 @nb.jitclass(AtmosISA_spec)
 class AtmosISA(object):
+    """The Atmospherics module using the ISA atmospheric model.
+    """
     def __init__(self):
         self.id = 'AtmosISA'
         self.type = 'Atmos'
@@ -44,6 +46,8 @@ class AtmosISA(object):
 
 @nb.jitclass(AtmosISA_spec)
 class AtmosConstant(object):
+    """The Atmos module with constant atmospheric properties.
+    """
     def __init__(self):
         self.id = 'AtmosConstant'
         self.type = 'Atmos'
@@ -61,6 +65,9 @@ class AtmosConstant(object):
 
 @nb.jitclass(AtmosISA_spec)
 class AtmosSTD76(object):
+    """The Atmospherics module using the STD76 atmospheric model.
+    """
+
     def __init__(self):
         self.id = "AtmosSTD76"
         self.type = 'Atmos'

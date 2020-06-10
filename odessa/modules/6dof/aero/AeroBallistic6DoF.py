@@ -20,6 +20,11 @@ aerolinear_spec = empty_spec + \
 
 @nb.jitclass(aerolinear_spec)
 class AeroBallistic6DoF(object):
+    """The Ballistic aerodynamics module for 6DoF applications.
+
+       Drag is applied in the opposite direction to the velocity vector.
+       Wind is included in the computation.
+    """
     def __init__(self):
         self.id = 'AeroBallistic6DoF'
         self.type = 'Aero'

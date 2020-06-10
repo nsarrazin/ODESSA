@@ -45,6 +45,11 @@ MAX_ALPHA = np.radians(10)
 
 @nb.jitclass(aerolinear_spec)
 class AeroLinear(object):
+    """The 6DoF Linear aerodynamics module.
+
+        Interpolates the aerodynamic coefficients 
+        as a function of mach number from a CSV.
+    """
     def __init__(self):
         self.id = 'AeroLinear'
         self.type = 'Aero'

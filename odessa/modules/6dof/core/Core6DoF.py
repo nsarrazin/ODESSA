@@ -49,6 +49,11 @@ core6DoF_spec = empty_spec + [("force", nb.float64[:]),
 
 @nb.jitclass(core6DoF_spec)
 class Core6DoF(object):
+    """The Core class, holding all the variables that need
+        to be exchanged between modules.
+
+        It also holds the y setter/getter and the dy getter.
+    """ 
     def __init__(self):
         self.id = 'Core6DoF'
         self.type = 'Core'
