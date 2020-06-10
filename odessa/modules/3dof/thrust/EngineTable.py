@@ -17,7 +17,7 @@ thrusttable_spec = empty_spec + \
      ('damping', nb.boolean)]
 
 
-@nb.jitclass(thrusttable_spec)
+@nb.experimental.jitclass(thrusttable_spec)
 class ThrustTable(object):
     def __init__(self):
         self.id = 'ThrustTable'

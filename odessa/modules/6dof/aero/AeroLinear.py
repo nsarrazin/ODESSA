@@ -43,7 +43,7 @@ aerolinear_spec = empty_spec + \
 MAX_ALPHA = np.radians(10)
 
 
-@nb.jitclass(aerolinear_spec)
+@nb.experimental.jitclass(aerolinear_spec)
 class AeroLinear(object):
     """The 6DoF Linear aerodynamics module.
 
@@ -276,7 +276,7 @@ aeroconstant_spec = empty_spec + \
      ("sref", nb.float64)
      ]
 
-@nb.jitclass(aeroconstant_spec)
+@nb.experimental.jitclass(aeroconstant_spec)
 class AeroConstant(object):
     def __init__(self):
         self.id = 'AeroConstant'

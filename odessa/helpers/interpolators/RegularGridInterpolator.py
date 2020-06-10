@@ -11,7 +11,7 @@ regular_grid_interp = [
     ("d1dx", nb.float64)
 ]
 
-@nb.jitclass(regular_grid_interp)
+@nb.experimental.jitclass(regular_grid_interp)
 class RegularGridInterpolator(object):
     ''' 2D grid interpolator which returns a linearly interpolated value using patch or grid interpolation.
     The interpolator assumes the derivative, or the stepsize over any axis to be constant.

@@ -11,7 +11,7 @@ aeroRTS_spec = empty_spec + \
      ("machs", nb.float64[:]), ]
 
 
-@nb.jitclass(aeroRTS_spec)
+@nb.experimental.jitclass(aeroRTS_spec)
 class AeroRTS(object):
     def __init__(self):
         self.id = 'AeroRTS'

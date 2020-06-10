@@ -5,7 +5,7 @@ from ....helpers.rotation import dcm2angles
 dynamicsRTS_spec = empty_spec + []
 
 
-@nb.jitclass(dynamicsRTS_spec)
+@nb.experimental.jitclass(dynamicsRTS_spec)
 class DynamicsRTS(object):
     def __init__(self):
         self.id = 'DynamicsRTS'

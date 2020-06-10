@@ -4,7 +4,7 @@ from ...Empty import empty_spec, float_array_type
 
 gravityRTS_spec = empty_spec + [("mu", nb.float64)]
 
-@nb.jitclass(gravityRTS_spec)
+@nb.experimental.jitclass(gravityRTS_spec)
 class Gravity6DoF(object):
     """
     The gravity module in body frame following the inverse square law.

@@ -6,7 +6,7 @@ mass_spec = empty_spec + \
     [("mass", nb.float64)]
 
 massinertia_spec = mass_spec + [("inertia", nb.float64[:, :])]
-@nb.jitclass(massinertia_spec)
+@nb.experimental.jitclass(massinertia_spec)
 class ConstantMassInertia(object):
     def __init__(self):
         self.id = 'ConstantMassInertia'

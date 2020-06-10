@@ -14,7 +14,7 @@ regular_cube_interp = [
 ]
 
 
-@nb.jitclass(regular_cube_interp)
+@nb.experimental.jitclass(regular_cube_interp)
 class RegularCubeInterpolator(object):
 
     def __init__(self):

@@ -30,7 +30,7 @@ masstable6dof_spec = empty_spec + \
 
 # TODO: Add Mass scale term
 # TODO: Verify Idot works
-@nb.jitclass(masstable6dof_spec)
+@nb.experimental.jitclass(masstable6dof_spec)
 class MassTable6DoF(object):
     def __init__(self):
         self.id = 'MassTable6DoF'

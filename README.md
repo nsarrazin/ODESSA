@@ -108,7 +108,7 @@ Now we can create the jitclass itself :
 ```python
 # the jitclass decorator is used to turn a class into a jitclass
 # with a reference to the specs we wrote above.
-@nb.jitclass(aero_spec)
+@nb.experimental.jitclass(aero_spec)
 class AeroBasic(object):
     def __init__(self):
         # the mandatory attributes so ODESSA knows what to call this module in a config file

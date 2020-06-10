@@ -6,7 +6,7 @@ mass_spec = empty_spec + \
     [("mass", nb.float64)]
 
 
-@nb.jitclass(mass_spec)
+@nb.experimental.jitclass(mass_spec)
 class ConstantMass(object):
     def __init__(self):
         self.id = 'ConstantMass'

@@ -10,7 +10,7 @@ tower_spherical_spec = empty_spec + \
      ('roll', nb.float64)]
 
 
-@nb.jitclass(tower_spherical_spec)
+@nb.experimental.jitclass(tower_spherical_spec)
 class TowerSpherical(object):
     def __init__(self):
         self.id = 'TowerSpherical'

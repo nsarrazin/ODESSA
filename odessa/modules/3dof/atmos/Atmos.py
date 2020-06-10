@@ -9,7 +9,7 @@ from ....helpers.math_func import interp_one
 AtmosISA_spec = empty_spec + []
 
 
-@nb.jitclass(AtmosISA_spec)
+@nb.experimental.jitclass(AtmosISA_spec)
 class AtmosISA(object):
     def __init__(self):
         self.id = 'AtmosISA'
@@ -42,7 +42,7 @@ class AtmosISA(object):
         self.history["a"] = np.zeros(1, dtype=np.float64)
 
 
-@nb.jitclass(AtmosISA_spec)
+@nb.experimental.jitclass(AtmosISA_spec)
 class AtmosConstant(object):
     def __init__(self):
         self.id = 'AtmosConstant'
@@ -59,7 +59,7 @@ class AtmosConstant(object):
                                            value_type=float_array_type)
 
 
-@nb.jitclass(AtmosISA_spec)
+@nb.experimental.jitclass(AtmosISA_spec)
 class AtmosSTD76(object):
     def __init__(self):
         self.id = "AtmosSTD76"

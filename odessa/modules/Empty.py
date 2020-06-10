@@ -11,7 +11,7 @@ empty_spec = [('id', nb.types.string),
               ]
 
 
-@nb.jitclass(empty_spec)
+@nb.experimental.jitclass(empty_spec)
 class Empty(object):
     """The most basic module. It does nothing but has an ID and a type.
     """

@@ -5,7 +5,7 @@ from ...Empty import empty_spec, float_array_type
 gravity_spec = empty_spec + [("g", nb.float64)]
 
 
-@nb.jitclass(gravity_spec)
+@nb.experimental.jitclass(gravity_spec)
 class Gravity(object):
     def __init__(self):
         self.id = 'ConstantGravityFlat'
@@ -19,7 +19,7 @@ class Gravity(object):
 gravityRTS_spec = empty_spec + [("mu", nb.float64)]
 
 
-@nb.jitclass(gravityRTS_spec)
+@nb.experimental.jitclass(gravityRTS_spec)
 class GravityRTS(object):
     def __init__(self):
         self.id = 'GravityRTS'

@@ -8,7 +8,7 @@ interpolator1d_spec = [("dx", nb.float64),
                        ("x_grid", nb.float64[:]),
                        ("y_grid", nb.float64[:])]
 
-@nb.jitclass(interpolator1d_spec)
+@nb.experimental.jitclass(interpolator1d_spec)
 class Interpolator1DLinear(object):
     """A numba jitclass that can be evaluated to linearly interpolate y over x.
     """

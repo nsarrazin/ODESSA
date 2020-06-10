@@ -9,7 +9,7 @@ from ....helpers.math_func import interp_one
 AtmosISA_spec = empty_spec + []
 
 
-@nb.jitclass(AtmosISA_spec)
+@nb.experimental.jitclass(AtmosISA_spec)
 class AtmosISA(object):
     """The Atmospherics module using the ISA atmospheric model.
     """
@@ -44,7 +44,7 @@ class AtmosISA(object):
         self.history["a"] = np.zeros(1, dtype=np.float64)
 
 
-@nb.jitclass(AtmosISA_spec)
+@nb.experimental.jitclass(AtmosISA_spec)
 class AtmosConstant(object):
     """The Atmos module with constant atmospheric properties.
     """
@@ -63,7 +63,7 @@ class AtmosConstant(object):
                                            value_type=float_array_type)
 
 
-@nb.jitclass(AtmosISA_spec)
+@nb.experimental.jitclass(AtmosISA_spec)
 class AtmosSTD76(object):
     """The Atmospherics module using the STD76 atmospheric model.
     """

@@ -47,7 +47,7 @@ core6DoF_spec = empty_spec + [("force", nb.float64[:]),
                               ]
 
 
-@nb.jitclass(core6DoF_spec)
+@nb.experimental.jitclass(core6DoF_spec)
 class Core6DoF(object):
     """The Core class, holding all the variables that need
         to be exchanged between modules.

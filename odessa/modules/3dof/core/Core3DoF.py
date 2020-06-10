@@ -29,7 +29,7 @@ core3DoF_spec = empty_spec + [("force", nb.float64[:]),
                               ]
 
 
-@nb.jitclass(core3DoF_spec)
+@nb.experimental.jitclass(core3DoF_spec)
 class Core3DoF(object):
     def __init__(self):
         self.id = 'Core3DoF'

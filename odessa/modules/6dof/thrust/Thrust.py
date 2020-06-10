@@ -8,7 +8,7 @@ constant_thrust_spec = empty_spec + \
     [('thrust', nb.float64)]
 
 
-@nb.jitclass(constant_thrust_spec)
+@nb.experimental.jitclass(constant_thrust_spec)
 class ConstantThrust(object):
     def __init__(self):
         self.id = 'ConstantThrust'
@@ -30,7 +30,7 @@ interpolation_thrust_spec = empty_spec + \
      ['x_thrust', nb.float64[:]]]
 
 
-@nb.jitclass(interpolation_thrust_spec)
+@nb.experimental.jitclass(interpolation_thrust_spec)
 class InterpolationThrust(object):
     def __init__(self):
         self.id = 'InterpolationThrust'

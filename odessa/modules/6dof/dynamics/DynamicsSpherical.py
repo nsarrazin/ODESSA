@@ -5,7 +5,7 @@ from ....helpers.rotation import dcm2angles
 dynamicsspherical_spec = empty_spec + []
 
 
-@nb.jitclass(dynamicsspherical_spec)
+@nb.experimental.jitclass(dynamicsspherical_spec)
 class DynamicsSpherical(object):
     """The full 6DoF dynamics module.
 
