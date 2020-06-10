@@ -337,6 +337,11 @@ Which returns the following figure :
 
 There are lots of other examples in the `scripts/`folder at the root of the repository, they include more complex JSON files and more advanced ways of updating the parameters of a simulation dynamically in a script. Going through them will probably give some insights on how to write more complex simulations.
 
+Interesting demo files to look at include :
+* `demo_6dof.py`
+* `demo_logging.py`
+* `demo_features.py`
+
 ---
 
 ## Contribution
