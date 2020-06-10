@@ -40,7 +40,7 @@ $ pip install -e .
 
 ODESSA deals with ODEs written in the following form :
 
-$\dot{x}(t) = f(t, x(t)) \quad \text{ for } t \in [t_0, t_f]$
+<img src="https://render.githubusercontent.com/render/math?math=$\dot{x}(t) = f(t, x(t)) \quad \text{ for } t \in [t_0, t_f]">
 
 Now in order to express the right-hand-side (RHS) function it was chosen to use a list of modules that are run one after the other serially. All these modules modify the attributes of a central Core module that holds the state variable, as well as any information that needs to be passed between modules.
 
